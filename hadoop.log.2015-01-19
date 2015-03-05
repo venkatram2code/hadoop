@@ -1,0 +1,1745 @@
+2015-01-19 12:26:05,577 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-01-19 12:26:05,983 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-01-19 12:26:05,987 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-01-19 12:26:06,397 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2015-01-19 12:26:06,408 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2015-01-19 12:26:06,431 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 1
+2015-01-19 12:26:06,479 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:1
+2015-01-19 12:26:06,710 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local11595885_0001
+2015-01-19 12:26:06,748 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera11595885/.staging/job_local11595885_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 12:26:06,757 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera11595885/.staging/job_local11595885_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 12:26:06,974 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local11595885_0001/job_local11595885_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 12:26:06,977 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local11595885_0001/job_local11595885_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 12:26:06,986 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2015-01-19 12:26:06,987 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local11595885_0001
+2015-01-19 12:26:07,001 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2015-01-19 12:26:07,011 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2015-01-19 12:26:07,068 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2015-01-19 12:26:07,069 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local11595885_0001_m_000000_0
+2015-01-19 12:26:07,139 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:26:07,144 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/yearmaxtemp/new file:0+69
+2015-01-19 12:26:07,394 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:26:07,396 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:26:07,396 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:26:07,396 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:26:07,396 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:26:07,405 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:26:07,423 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-01-19 12:26:07,423 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:26:07,423 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2015-01-19 12:26:07,424 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 58; bufvoid = 104857600
+2015-01-19 12:26:07,424 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214380(104857520); length = 17/6553600
+2015-01-19 12:26:07,444 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-01-19 12:26:07,453 INFO org.apache.hadoop.mapred.Task: Task:attempt_local11595885_0001_m_000000_0 is done. And is in the process of committing
+2015-01-19 12:26:07,493 INFO org.apache.hadoop.mapred.LocalJobRunner: file:/home/cloudera/Desktop/localhadoop/yearmaxtemp/new file:0+69
+2015-01-19 12:26:07,494 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local11595885_0001_m_000000_0' done.
+2015-01-19 12:26:07,494 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local11595885_0001_m_000000_0
+2015-01-19 12:26:07,494 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2015-01-19 12:26:07,503 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for reduce tasks
+2015-01-19 12:26:07,503 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local11595885_0001_r_000000_0
+2015-01-19 12:26:07,515 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:26:07,521 INFO org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4c1070d2
+2015-01-19 12:26:07,542 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: MergerManager: memoryLimit=626471744, maxSingleShuffleLimit=156617936, mergeThreshold=413471360, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2015-01-19 12:26:07,545 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: attempt_local11595885_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2015-01-19 12:26:07,583 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local11595885_0001_m_000000_0 decomp: 70 len: 74 to MEMORY
+2015-01-19 12:26:07,597 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 70 bytes from map-output for attempt_local11595885_0001_m_000000_0
+2015-01-19 12:26:07,644 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 70, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->70
+2015-01-19 12:26:07,645 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2015-01-19 12:26:07,647 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2015-01-19 12:26:07,647 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2015-01-19 12:26:07,656 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2015-01-19 12:26:07,657 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 64 bytes
+2015-01-19 12:26:07,658 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merged 1 segments, 70 bytes to disk to satisfy reduce memory limit
+2015-01-19 12:26:07,659 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 1 files, 74 bytes from disk
+2015-01-19 12:26:07,660 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2015-01-19 12:26:07,660 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2015-01-19 12:26:07,661 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 64 bytes
+2015-01-19 12:26:07,661 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2015-01-19 12:26:07,683 INFO org.apache.hadoop.conf.Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2015-01-19 12:26:07,691 INFO org.apache.hadoop.mapred.Task: Task:attempt_local11595885_0001_r_000000_0 is done. And is in the process of committing
+2015-01-19 12:26:07,692 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2015-01-19 12:26:07,693 INFO org.apache.hadoop.mapred.Task: Task attempt_local11595885_0001_r_000000_0 is allowed to commit now
+2015-01-19 12:26:07,694 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local11595885_0001_r_000000_0' to file:/home/cloudera/Desktop/localhadoop/yearmaxtemp_out/_temporary/0/task_local11595885_0001_r_000000
+2015-01-19 12:26:07,695 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2015-01-19 12:26:07,695 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local11595885_0001_r_000000_0' done.
+2015-01-19 12:26:07,695 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local11595885_0001_r_000000_0
+2015-01-19 12:26:07,695 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce task executor complete.
+2015-01-19 12:26:07,992 INFO org.apache.hadoop.mapreduce.Job: Job job_local11595885_0001 running in uber mode : false
+2015-01-19 12:26:08,000 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 100%
+2015-01-19 12:26:08,005 INFO org.apache.hadoop.mapreduce.Job: Job job_local11595885_0001 completed successfully
+2015-01-19 12:26:08,036 INFO org.apache.hadoop.mapreduce.Job: Counters: 33
+	File System Counters
+		FILE: Number of bytes read=676
+		FILE: Number of bytes written=496078
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=5
+		Map output bytes=58
+		Map output materialized bytes=74
+		Input split bytes=125
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=74
+		Reduce input records=5
+		Reduce output records=5
+		Spilled Records=10
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=362807296
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=69
+	File Output Format Counters 
+		Bytes Written=70
+2015-01-19 12:26:33,346 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-01-19 12:26:33,846 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-01-19 12:26:33,854 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-01-19 12:26:34,259 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2015-01-19 12:26:34,262 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2015-01-19 12:26:34,293 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 2
+2015-01-19 12:26:34,328 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:2
+2015-01-19 12:26:34,544 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1976360531_0001
+2015-01-19 12:26:34,590 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera1976360531/.staging/job_local1976360531_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 12:26:34,602 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera1976360531/.staging/job_local1976360531_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 12:26:34,821 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local1976360531_0001/job_local1976360531_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 12:26:34,831 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local1976360531_0001/job_local1976360531_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 12:26:34,841 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2015-01-19 12:26:34,842 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local1976360531_0001
+2015-01-19 12:26:34,847 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2015-01-19 12:26:34,865 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2015-01-19 12:26:34,942 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2015-01-19 12:26:34,943 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1976360531_0001_m_000000_0
+2015-01-19 12:26:35,001 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:26:35,005 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1:0+50
+2015-01-19 12:26:35,121 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:26:35,122 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:26:35,122 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:26:35,122 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:26:35,122 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:26:35,129 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:26:35,169 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@3c9d141c
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:26:35,171 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:26:35,197 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1976360531_0001_m_000001_0
+2015-01-19 12:26:35,199 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:26:35,201 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~:0+0
+2015-01-19 12:26:35,404 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:26:35,404 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:26:35,404 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:26:35,404 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:26:35,404 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:26:35,408 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:26:35,410 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@77763895
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:26:35,411 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:26:35,425 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2015-01-19 12:26:35,501 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local1976360531_0001
+java.lang.Exception: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.io.SequenceFile$Reader.init(SequenceFile.java:1850)
+	at org.apache.hadoop.io.SequenceFile$Reader.initialize(SequenceFile.java:1810)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1759)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1773)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.initialize(SequenceFileRecordReader.java:54)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.initialize(MapTask.java:545)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:783)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:26:35,845 INFO org.apache.hadoop.mapreduce.Job: Job job_local1976360531_0001 running in uber mode : false
+2015-01-19 12:26:35,847 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2015-01-19 12:26:35,849 INFO org.apache.hadoop.mapreduce.Job: Job job_local1976360531_0001 failed with state FAILED due to: NA
+2015-01-19 12:26:35,858 INFO org.apache.hadoop.mapreduce.Job: Counters: 0
+2015-01-19 12:29:55,195 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-01-19 12:29:55,693 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-01-19 12:29:55,696 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-01-19 12:29:55,794 WARN org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:cloudera (auth:SIMPLE) cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory file:/home/cloudera/Desktop/localhadoop/readseq_out already exists
+2015-01-19 12:30:08,007 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-01-19 12:30:08,429 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-01-19 12:30:08,432 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-01-19 12:30:08,490 WARN org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:cloudera (auth:SIMPLE) cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory file:/home/cloudera/Desktop/localhadoop/readseq_out already exists
+2015-01-19 12:31:10,184 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-01-19 12:31:10,560 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-01-19 12:31:10,569 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-01-19 12:31:10,972 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2015-01-19 12:31:10,985 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2015-01-19 12:31:11,022 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 8
+2015-01-19 12:31:11,053 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:8
+2015-01-19 12:31:11,267 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1183159566_0001
+2015-01-19 12:31:11,308 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera1183159566/.staging/job_local1183159566_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 12:31:11,317 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera1183159566/.staging/job_local1183159566_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 12:31:11,591 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local1183159566_0001/job_local1183159566_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 12:31:11,595 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local1183159566_0001/job_local1183159566_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 12:31:11,599 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2015-01-19 12:31:11,600 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local1183159566_0001
+2015-01-19 12:31:11,605 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2015-01-19 12:31:11,619 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2015-01-19 12:31:11,707 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2015-01-19 12:31:11,708 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1183159566_0001_m_000000_0
+2015-01-19 12:31:11,780 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:31:11,784 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~:0+50
+2015-01-19 12:31:11,871 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:31:11,872 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:31:11,872 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:31:11,872 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:31:11,872 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:31:11,876 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:31:11,895 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@37c0ef0c
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:31:11,897 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:31:11,908 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1183159566_0001_m_000001_0
+2015-01-19 12:31:11,910 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:31:11,912 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq3:0+13
+2015-01-19 12:31:12,398 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:31:12,398 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:31:12,398 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:31:12,398 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:31:12,398 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:31:12,498 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:31:12,500 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@2bab91af
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:31:12,501 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:31:12,508 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1183159566_0001_m_000002_0
+2015-01-19 12:31:12,512 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:31:12,515 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1:0+13
+2015-01-19 12:31:12,604 INFO org.apache.hadoop.mapreduce.Job: Job job_local1183159566_0001 running in uber mode : false
+2015-01-19 12:31:12,739 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2015-01-19 12:31:13,185 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:31:13,188 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:31:13,188 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:31:13,188 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:31:13,189 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:31:13,191 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:31:13,194 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@6d1ef03
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:31:13,195 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:31:13,203 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1183159566_0001_m_000003_0
+2015-01-19 12:31:13,205 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:31:13,207 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq2:0+13
+2015-01-19 12:31:13,696 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:31:13,696 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:31:13,696 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:31:13,696 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:31:13,696 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:31:13,875 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:31:13,957 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@23e5204d
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:31:13,958 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:31:14,068 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1183159566_0001_m_000004_0
+2015-01-19 12:31:14,072 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:31:14,075 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq4:0+12
+2015-01-19 12:31:14,458 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:31:14,458 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:31:14,458 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:31:14,458 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:31:14,459 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:31:14,460 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:31:14,461 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@7a0280ad
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:31:14,461 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:31:14,792 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1183159566_0001_m_000005_0
+2015-01-19 12:31:14,796 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:31:14,824 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq3~:0+0
+2015-01-19 12:31:15,593 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:31:15,594 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:31:15,595 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:31:15,595 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:31:15,595 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:31:15,603 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:31:15,615 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@565c852a
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:31:15,617 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:31:15,633 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1183159566_0001_m_000006_0
+2015-01-19 12:31:15,637 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:31:15,640 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq4~:0+0
+2015-01-19 12:31:15,840 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:31:15,842 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:31:15,843 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:31:15,843 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:31:15,843 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:31:15,844 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:31:15,846 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@22a5d7d3
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:31:15,846 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:31:15,850 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1183159566_0001_m_000007_0
+2015-01-19 12:31:15,852 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:31:15,854 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq2~:0+0
+2015-01-19 12:31:15,887 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:31:15,888 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:31:15,888 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:31:15,888 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:31:15,888 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:31:15,889 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:31:15,890 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@1357fdf7
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:31:15,890 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:31:15,898 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2015-01-19 12:31:15,900 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local1183159566_0001
+java.lang.Exception: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~ not a SequenceFile
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~ not a SequenceFile
+	at org.apache.hadoop.io.SequenceFile$Reader.init(SequenceFile.java:1850)
+	at org.apache.hadoop.io.SequenceFile$Reader.initialize(SequenceFile.java:1810)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1759)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1773)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.initialize(SequenceFileRecordReader.java:54)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.initialize(MapTask.java:545)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:783)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:31:16,811 INFO org.apache.hadoop.mapreduce.Job: Job job_local1183159566_0001 failed with state FAILED due to: NA
+2015-01-19 12:31:16,842 INFO org.apache.hadoop.mapreduce.Job: Counters: 0
+2015-01-19 12:36:24,139 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-01-19 12:36:24,620 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-01-19 12:36:24,624 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-01-19 12:36:24,981 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2015-01-19 12:36:24,990 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2015-01-19 12:36:25,029 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 8
+2015-01-19 12:36:25,060 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:8
+2015-01-19 12:36:25,327 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local101917691_0001
+2015-01-19 12:36:25,399 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera101917691/.staging/job_local101917691_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 12:36:25,407 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera101917691/.staging/job_local101917691_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 12:36:25,632 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local101917691_0001/job_local101917691_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 12:36:25,637 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local101917691_0001/job_local101917691_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 12:36:25,658 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2015-01-19 12:36:25,659 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local101917691_0001
+2015-01-19 12:36:25,660 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2015-01-19 12:36:25,678 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2015-01-19 12:36:25,771 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2015-01-19 12:36:25,773 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local101917691_0001_m_000000_0
+2015-01-19 12:36:25,831 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:36:25,834 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~:0+50
+2015-01-19 12:36:25,899 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:36:25,899 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:36:25,899 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:36:25,899 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:36:25,899 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:36:25,902 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:36:25,922 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@4e273069
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:36:25,925 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:36:25,940 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local101917691_0001_m_000001_0
+2015-01-19 12:36:25,943 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:36:25,944 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq3:0+13
+2015-01-19 12:36:26,006 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:36:26,006 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:36:26,006 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:36:26,006 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:36:26,006 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:36:26,007 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:36:26,012 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@398e54e8
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:36:26,013 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:36:26,017 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local101917691_0001_m_000002_0
+2015-01-19 12:36:26,019 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:36:26,020 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1:0+13
+2015-01-19 12:36:26,087 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:36:26,087 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:36:26,087 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:36:26,087 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:36:26,087 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:36:26,088 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:36:26,090 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@4fc2b545
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:36:26,090 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:36:26,094 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local101917691_0001_m_000003_0
+2015-01-19 12:36:26,096 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:36:26,097 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq2:0+13
+2015-01-19 12:36:26,161 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:36:26,161 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:36:26,161 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:36:26,162 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:36:26,162 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:36:26,163 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:36:26,164 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@26cf045e
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:36:26,165 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:36:26,168 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local101917691_0001_m_000004_0
+2015-01-19 12:36:26,170 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:36:26,172 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq4:0+12
+2015-01-19 12:36:26,233 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:36:26,233 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:36:26,233 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:36:26,233 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:36:26,233 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:36:26,234 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:36:26,236 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@66dd1d3
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:36:26,236 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:36:26,244 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local101917691_0001_m_000005_0
+2015-01-19 12:36:26,249 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:36:26,252 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq3~:0+0
+2015-01-19 12:36:26,889 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:36:26,890 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:36:26,890 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:36:26,890 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:36:26,889 INFO org.apache.hadoop.mapreduce.Job: Job job_local101917691_0001 running in uber mode : false
+2015-01-19 12:36:26,890 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:36:26,892 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:36:26,895 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@453ef5b1
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:36:26,895 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:36:26,900 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2015-01-19 12:36:26,903 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local101917691_0001_m_000006_0
+2015-01-19 12:36:26,906 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:36:26,909 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq4~:0+0
+2015-01-19 12:36:27,124 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:36:27,124 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:36:27,125 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:36:27,125 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:36:27,125 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:36:27,126 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:36:27,127 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@b92a9e4
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:36:27,127 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:36:27,131 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local101917691_0001_m_000007_0
+2015-01-19 12:36:27,133 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 12:36:27,134 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq2~:0+0
+2015-01-19 12:36:27,173 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 12:36:27,173 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 12:36:27,173 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 12:36:27,173 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 12:36:27,173 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 12:36:27,174 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 12:36:27,176 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@118962e1
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:36:27,176 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 12:36:27,179 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2015-01-19 12:36:27,180 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local101917691_0001
+java.lang.Exception: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~ not a SequenceFile
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~ not a SequenceFile
+	at org.apache.hadoop.io.SequenceFile$Reader.init(SequenceFile.java:1850)
+	at org.apache.hadoop.io.SequenceFile$Reader.initialize(SequenceFile.java:1810)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1759)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1773)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.initialize(SequenceFileRecordReader.java:54)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.initialize(MapTask.java:545)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:783)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 12:36:27,910 INFO org.apache.hadoop.mapreduce.Job: Job job_local101917691_0001 failed with state FAILED due to: NA
+2015-01-19 12:36:27,933 INFO org.apache.hadoop.mapreduce.Job: Counters: 0
+2015-01-19 13:42:32,495 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-01-19 13:42:32,953 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-01-19 13:42:32,961 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-01-19 13:42:33,282 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2015-01-19 13:42:33,285 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2015-01-19 13:42:33,312 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 5
+2015-01-19 13:42:33,345 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:5
+2015-01-19 13:42:33,566 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1896081066_0001
+2015-01-19 13:42:33,632 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera1896081066/.staging/job_local1896081066_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 13:42:33,646 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera1896081066/.staging/job_local1896081066_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 13:42:33,918 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local1896081066_0001/job_local1896081066_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 13:42:33,922 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local1896081066_0001/job_local1896081066_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 13:42:33,928 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2015-01-19 13:42:33,929 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local1896081066_0001
+2015-01-19 13:42:33,933 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2015-01-19 13:42:33,943 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2015-01-19 13:42:34,014 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2015-01-19 13:42:34,015 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1896081066_0001_m_000000_0
+2015-01-19 13:42:34,089 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:42:34,097 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1:0+50
+2015-01-19 13:42:34,173 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:42:34,174 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:42:34,174 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:42:34,174 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:42:34,174 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:42:34,178 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:42:34,201 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@19a5519c
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:42:34,203 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:42:34,214 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1896081066_0001_m_000001_0
+2015-01-19 13:42:34,216 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:42:34,218 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~:0+13
+2015-01-19 13:42:34,272 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:42:34,273 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:42:34,273 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:42:34,273 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:42:34,273 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:42:34,274 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:42:34,275 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@1e6d7f85
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:42:34,276 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:42:34,279 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1896081066_0001_m_000002_0
+2015-01-19 13:42:34,281 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:42:34,282 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq3~:0+0
+2015-01-19 13:42:34,346 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:42:34,346 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:42:34,346 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:42:34,346 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:42:34,346 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:42:34,347 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:42:34,349 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@78eecf54
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:42:34,349 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:42:34,353 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1896081066_0001_m_000003_0
+2015-01-19 13:42:34,355 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:42:34,356 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq4~:0+0
+2015-01-19 13:42:34,488 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:42:34,488 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:42:34,488 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:42:34,488 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:42:34,488 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:42:34,489 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:42:34,491 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@5ec136e9
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:42:34,491 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:42:34,495 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1896081066_0001_m_000004_0
+2015-01-19 13:42:34,497 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:42:34,498 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq2~:0+0
+2015-01-19 13:42:34,637 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:42:34,637 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:42:34,637 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:42:34,637 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:42:34,637 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:42:34,639 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:42:34,641 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@62788154
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:42:34,641 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:42:34,666 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2015-01-19 13:42:34,669 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local1896081066_0001
+java.lang.Exception: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.io.SequenceFile$Reader.init(SequenceFile.java:1850)
+	at org.apache.hadoop.io.SequenceFile$Reader.initialize(SequenceFile.java:1810)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1759)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1773)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.initialize(SequenceFileRecordReader.java:54)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.initialize(MapTask.java:545)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:783)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:42:34,932 INFO org.apache.hadoop.mapreduce.Job: Job job_local1896081066_0001 running in uber mode : false
+2015-01-19 13:42:34,943 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2015-01-19 13:42:34,950 INFO org.apache.hadoop.mapreduce.Job: Job job_local1896081066_0001 failed with state FAILED due to: NA
+2015-01-19 13:42:35,009 INFO org.apache.hadoop.mapreduce.Job: Counters: 0
+2015-01-19 13:48:01,918 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-01-19 13:48:02,381 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-01-19 13:48:02,382 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-01-19 13:48:02,755 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2015-01-19 13:48:02,761 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2015-01-19 13:48:02,811 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 5
+2015-01-19 13:48:02,844 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:5
+2015-01-19 13:48:03,061 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local890258829_0001
+2015-01-19 13:48:03,136 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera890258829/.staging/job_local890258829_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 13:48:03,153 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera890258829/.staging/job_local890258829_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 13:48:03,410 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local890258829_0001/job_local890258829_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 13:48:03,415 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local890258829_0001/job_local890258829_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 13:48:03,419 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2015-01-19 13:48:03,420 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local890258829_0001
+2015-01-19 13:48:03,424 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2015-01-19 13:48:03,431 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2015-01-19 13:48:03,499 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2015-01-19 13:48:03,500 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local890258829_0001_m_000000_0
+2015-01-19 13:48:03,551 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:48:03,561 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1:0+50
+2015-01-19 13:48:03,642 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:48:03,643 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:48:03,643 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:48:03,643 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:48:03,643 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:48:03,649 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:48:03,683 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@14e6c243
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:48:03,690 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:48:03,701 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local890258829_0001_m_000001_0
+2015-01-19 13:48:03,704 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:48:03,705 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~:0+13
+2015-01-19 13:48:03,766 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:48:03,766 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:48:03,766 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:48:03,766 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:48:03,766 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:48:03,767 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:48:03,772 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@6127cb39
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:48:03,772 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:48:03,776 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local890258829_0001_m_000002_0
+2015-01-19 13:48:03,778 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:48:03,780 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq3~:0+0
+2015-01-19 13:48:03,839 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:48:03,840 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:48:03,840 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:48:03,840 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:48:03,840 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:48:03,841 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:48:03,842 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@13ea76f1
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:48:03,843 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:48:03,846 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local890258829_0001_m_000003_0
+2015-01-19 13:48:03,848 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:48:03,850 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq4~:0+0
+2015-01-19 13:48:03,917 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:48:03,918 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:48:03,918 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:48:03,918 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:48:03,918 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:48:03,919 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:48:03,920 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@7d9238df
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:48:03,921 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:48:03,925 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local890258829_0001_m_000004_0
+2015-01-19 13:48:03,927 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:48:03,928 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq2~:0+0
+2015-01-19 13:48:04,287 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:48:04,288 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:48:04,288 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:48:04,288 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:48:04,288 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:48:04,444 INFO org.apache.hadoop.mapreduce.Job: Job job_local890258829_0001 running in uber mode : false
+2015-01-19 13:48:04,461 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:48:04,470 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@2c7dbe75
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:48:04,474 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:48:04,522 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2015-01-19 13:48:04,542 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2015-01-19 13:48:04,545 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local890258829_0001
+java.lang.Exception: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.io.SequenceFile$Reader.init(SequenceFile.java:1850)
+	at org.apache.hadoop.io.SequenceFile$Reader.initialize(SequenceFile.java:1810)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1759)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1773)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.initialize(SequenceFileRecordReader.java:54)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.initialize(MapTask.java:545)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:783)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:48:05,534 INFO org.apache.hadoop.mapreduce.Job: Job job_local890258829_0001 failed with state FAILED due to: NA
+2015-01-19 13:48:05,563 INFO org.apache.hadoop.mapreduce.Job: Counters: 0
+2015-01-19 13:48:41,856 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-01-19 13:48:42,258 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-01-19 13:48:42,264 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-01-19 13:48:42,596 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2015-01-19 13:48:42,599 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2015-01-19 13:48:42,631 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 5
+2015-01-19 13:48:42,679 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:5
+2015-01-19 13:48:42,875 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1038422092_0001
+2015-01-19 13:48:42,941 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera1038422092/.staging/job_local1038422092_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 13:48:42,953 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera1038422092/.staging/job_local1038422092_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 13:48:43,204 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local1038422092_0001/job_local1038422092_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 13:48:43,207 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local1038422092_0001/job_local1038422092_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 13:48:43,212 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2015-01-19 13:48:43,213 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local1038422092_0001
+2015-01-19 13:48:43,216 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2015-01-19 13:48:43,227 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2015-01-19 13:48:43,301 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2015-01-19 13:48:43,302 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1038422092_0001_m_000000_0
+2015-01-19 13:48:43,358 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:48:43,364 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1:0+50
+2015-01-19 13:48:43,444 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:48:43,444 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:48:43,445 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:48:43,445 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:48:43,445 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:48:43,451 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:48:43,483 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@14e6c243
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:48:43,488 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:48:43,499 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1038422092_0001_m_000001_0
+2015-01-19 13:48:43,501 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:48:43,502 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~:0+13
+2015-01-19 13:48:43,559 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:48:43,559 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:48:43,559 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:48:43,560 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:48:43,560 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:48:43,561 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:48:43,565 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@6127cb39
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:48:43,566 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:48:43,571 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1038422092_0001_m_000002_0
+2015-01-19 13:48:43,573 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:48:43,574 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq3~:0+0
+2015-01-19 13:48:43,623 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:48:43,623 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:48:43,623 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:48:43,623 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:48:43,624 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:48:43,625 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:48:43,626 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@13ea76f1
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:48:43,626 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:48:43,630 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1038422092_0001_m_000003_0
+2015-01-19 13:48:43,632 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:48:43,633 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq4~:0+0
+2015-01-19 13:48:43,682 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:48:43,683 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:48:43,683 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:48:43,683 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:48:43,683 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:48:43,684 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:48:43,685 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@7d9238df
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:48:43,686 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:48:43,689 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1038422092_0001_m_000004_0
+2015-01-19 13:48:43,691 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:48:43,693 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq2~:0+0
+2015-01-19 13:48:43,752 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:48:43,752 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:48:43,752 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:48:43,752 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:48:43,752 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:48:43,753 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:48:43,754 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@69eaa70e
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:48:43,755 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:48:43,762 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2015-01-19 13:48:43,763 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local1038422092_0001
+java.lang.Exception: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.io.SequenceFile$Reader.init(SequenceFile.java:1850)
+	at org.apache.hadoop.io.SequenceFile$Reader.initialize(SequenceFile.java:1810)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1759)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1773)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.initialize(SequenceFileRecordReader.java:54)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.initialize(MapTask.java:545)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:783)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:48:44,216 INFO org.apache.hadoop.mapreduce.Job: Job job_local1038422092_0001 running in uber mode : false
+2015-01-19 13:48:44,220 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2015-01-19 13:48:44,225 INFO org.apache.hadoop.mapreduce.Job: Job job_local1038422092_0001 failed with state FAILED due to: NA
+2015-01-19 13:48:44,243 INFO org.apache.hadoop.mapreduce.Job: Counters: 0
+2015-01-19 13:49:21,361 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-01-19 13:49:21,660 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-01-19 13:49:21,661 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-01-19 13:49:22,104 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2015-01-19 13:49:22,107 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2015-01-19 13:49:22,129 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 5
+2015-01-19 13:49:22,159 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:5
+2015-01-19 13:49:22,333 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local25629552_0001
+2015-01-19 13:49:22,370 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera25629552/.staging/job_local25629552_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 13:49:22,379 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera25629552/.staging/job_local25629552_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 13:49:22,563 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local25629552_0001/job_local25629552_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 13:49:22,575 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local25629552_0001/job_local25629552_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 13:49:22,588 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2015-01-19 13:49:22,589 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local25629552_0001
+2015-01-19 13:49:22,590 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2015-01-19 13:49:22,603 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2015-01-19 13:49:22,700 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2015-01-19 13:49:22,701 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local25629552_0001_m_000000_0
+2015-01-19 13:49:22,751 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:49:22,756 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1:0+50
+2015-01-19 13:49:22,828 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:49:22,828 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:49:22,829 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:49:22,829 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:49:22,829 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:49:22,833 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:49:22,851 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@1d69fe0a
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:49:22,853 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:49:22,863 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local25629552_0001_m_000001_0
+2015-01-19 13:49:22,864 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:49:22,866 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~:0+13
+2015-01-19 13:49:22,926 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:49:22,926 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:49:22,927 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:49:22,927 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:49:22,927 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:49:22,928 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:49:22,929 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@158a1cdf
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:49:22,930 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:49:22,934 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local25629552_0001_m_000002_0
+2015-01-19 13:49:22,936 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:49:22,937 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq3~:0+0
+2015-01-19 13:49:22,994 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:49:22,995 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:49:22,995 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:49:22,995 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:49:22,995 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:49:23,001 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:49:23,002 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@7b8f3d03
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:49:23,003 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:49:23,008 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local25629552_0001_m_000003_0
+2015-01-19 13:49:23,011 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:49:23,012 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq4~:0+0
+2015-01-19 13:49:23,069 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:49:23,070 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:49:23,070 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:49:23,070 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:49:23,070 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:49:23,071 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:49:23,072 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@626d26e
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:49:23,073 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:49:23,077 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local25629552_0001_m_000004_0
+2015-01-19 13:49:23,079 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:49:23,081 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq2~:0+0
+2015-01-19 13:49:23,145 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:49:23,146 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:49:23,146 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:49:23,146 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:49:23,146 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:49:23,147 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:49:23,148 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@ad3f8e1
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:49:23,148 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:49:23,161 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2015-01-19 13:49:23,162 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local25629552_0001
+java.lang.Exception: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.io.SequenceFile$Reader.init(SequenceFile.java:1850)
+	at org.apache.hadoop.io.SequenceFile$Reader.initialize(SequenceFile.java:1810)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1759)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1773)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.initialize(SequenceFileRecordReader.java:54)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.initialize(MapTask.java:545)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:783)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:49:23,591 INFO org.apache.hadoop.mapreduce.Job: Job job_local25629552_0001 running in uber mode : false
+2015-01-19 13:49:23,595 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2015-01-19 13:49:23,600 INFO org.apache.hadoop.mapreduce.Job: Job job_local25629552_0001 failed with state FAILED due to: NA
+2015-01-19 13:49:23,614 INFO org.apache.hadoop.mapreduce.Job: Counters: 0
+2015-01-19 13:50:25,882 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-01-19 13:50:26,252 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-01-19 13:50:26,256 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-01-19 13:50:26,575 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2015-01-19 13:50:26,578 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2015-01-19 13:50:26,600 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 5
+2015-01-19 13:50:26,627 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:5
+2015-01-19 13:50:26,801 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local2120275560_0001
+2015-01-19 13:50:26,838 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera2120275560/.staging/job_local2120275560_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 13:50:26,846 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera2120275560/.staging/job_local2120275560_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 13:50:27,064 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local2120275560_0001/job_local2120275560_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 13:50:27,067 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local2120275560_0001/job_local2120275560_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 13:50:27,072 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2015-01-19 13:50:27,073 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local2120275560_0001
+2015-01-19 13:50:27,077 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2015-01-19 13:50:27,084 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2015-01-19 13:50:27,134 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2015-01-19 13:50:27,135 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local2120275560_0001_m_000000_0
+2015-01-19 13:50:27,169 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:50:27,173 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1:0+50
+2015-01-19 13:50:27,251 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:50:27,251 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:50:27,251 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:50:27,252 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:50:27,252 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:50:27,256 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:50:27,280 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@53dd116
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:50:27,283 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:50:27,292 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local2120275560_0001_m_000001_0
+2015-01-19 13:50:27,294 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:50:27,295 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~:0+13
+2015-01-19 13:50:27,364 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:50:27,364 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:50:27,365 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:50:27,365 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:50:27,365 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:50:27,366 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:50:27,368 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@780aedeb
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:50:27,368 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:50:27,372 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local2120275560_0001_m_000002_0
+2015-01-19 13:50:27,374 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:50:27,376 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq3~:0+0
+2015-01-19 13:50:27,439 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:50:27,439 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:50:27,439 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:50:27,439 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:50:27,439 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:50:27,441 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:50:27,443 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@6127cb39
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:50:27,444 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:50:27,450 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local2120275560_0001_m_000003_0
+2015-01-19 13:50:27,452 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:50:27,455 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq4~:0+0
+2015-01-19 13:50:27,511 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:50:27,511 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:50:27,511 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:50:27,511 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:50:27,511 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:50:27,512 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:50:27,514 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@13ea76f1
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:50:27,514 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:50:27,519 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local2120275560_0001_m_000004_0
+2015-01-19 13:50:27,521 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 13:50:27,523 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq2~:0+0
+2015-01-19 13:50:27,630 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 13:50:27,630 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 13:50:27,631 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 13:50:27,631 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 13:50:27,631 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 13:50:27,633 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 13:50:27,634 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@7d9238df
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:50:27,635 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 13:50:27,641 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2015-01-19 13:50:27,642 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local2120275560_0001
+java.lang.Exception: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.io.SequenceFile$Reader.init(SequenceFile.java:1850)
+	at org.apache.hadoop.io.SequenceFile$Reader.initialize(SequenceFile.java:1810)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1759)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1773)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.initialize(SequenceFileRecordReader.java:54)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.initialize(MapTask.java:545)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:783)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 13:50:28,076 INFO org.apache.hadoop.mapreduce.Job: Job job_local2120275560_0001 running in uber mode : false
+2015-01-19 13:50:28,080 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2015-01-19 13:50:28,085 INFO org.apache.hadoop.mapreduce.Job: Job job_local2120275560_0001 failed with state FAILED due to: NA
+2015-01-19 13:50:28,102 INFO org.apache.hadoop.mapreduce.Job: Counters: 0
+2015-01-19 14:51:24,550 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-01-19 14:51:24,969 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-01-19 14:51:24,971 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-01-19 14:51:25,465 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2015-01-19 14:51:25,486 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2015-01-19 14:51:25,596 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 5
+2015-01-19 14:51:25,657 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:5
+2015-01-19 14:51:25,838 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local368166738_0001
+2015-01-19 14:51:25,891 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera368166738/.staging/job_local368166738_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 14:51:25,898 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera368166738/.staging/job_local368166738_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 14:51:26,158 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local368166738_0001/job_local368166738_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 14:51:26,165 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local368166738_0001/job_local368166738_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 14:51:26,182 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2015-01-19 14:51:26,183 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local368166738_0001
+2015-01-19 14:51:26,186 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2015-01-19 14:51:26,198 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2015-01-19 14:51:26,296 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2015-01-19 14:51:26,298 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local368166738_0001_m_000000_0
+2015-01-19 14:51:26,358 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 14:51:26,369 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1:0+50
+2015-01-19 14:51:26,936 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 14:51:26,937 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 14:51:26,937 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 14:51:26,937 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 14:51:26,937 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 14:51:26,941 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 14:51:26,959 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@53dd116
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 14:51:26,961 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 14:51:26,970 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local368166738_0001_m_000001_0
+2015-01-19 14:51:26,972 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 14:51:26,973 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~:0+13
+2015-01-19 14:51:27,539 INFO org.apache.hadoop.mapreduce.Job: Job job_local368166738_0001 running in uber mode : false
+2015-01-19 14:51:27,541 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2015-01-19 14:51:27,543 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 14:51:27,543 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 14:51:27,543 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 14:51:27,543 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 14:51:27,543 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 14:51:27,545 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 14:51:27,547 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@17abb1a4
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 14:51:27,547 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 14:51:27,550 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local368166738_0001_m_000002_0
+2015-01-19 14:51:27,552 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 14:51:27,554 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq3~:0+0
+2015-01-19 14:51:28,496 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 14:51:28,496 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 14:51:28,496 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 14:51:28,496 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 14:51:28,496 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 14:51:28,498 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 14:51:28,499 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@3a4e1c6f
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 14:51:28,499 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 14:51:28,503 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local368166738_0001_m_000003_0
+2015-01-19 14:51:28,566 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 14:51:28,569 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq4~:0+0
+2015-01-19 14:51:30,348 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 14:51:30,349 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 14:51:30,349 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 14:51:30,349 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 14:51:30,349 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 14:51:30,350 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 14:51:30,352 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@7e4cedf6
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 14:51:30,352 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 14:51:30,357 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local368166738_0001_m_000004_0
+2015-01-19 14:51:30,360 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 14:51:30,362 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq2~:0+0
+2015-01-19 14:51:31,712 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 14:51:31,712 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 14:51:31,712 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 14:51:31,712 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 14:51:31,712 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 14:51:31,713 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 14:51:31,715 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@488b9ddc
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 14:51:31,715 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 14:51:31,722 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2015-01-19 14:51:31,724 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local368166738_0001
+java.lang.Exception: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.io.SequenceFile$Reader.init(SequenceFile.java:1850)
+	at org.apache.hadoop.io.SequenceFile$Reader.initialize(SequenceFile.java:1810)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1759)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1773)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.initialize(SequenceFileRecordReader.java:54)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.initialize(MapTask.java:545)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:783)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 14:51:32,590 INFO org.apache.hadoop.mapreduce.Job: Job job_local368166738_0001 failed with state FAILED due to: NA
+2015-01-19 14:51:32,616 INFO org.apache.hadoop.mapreduce.Job: Counters: 0
+2015-01-19 14:58:34,319 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-01-19 14:58:34,754 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-01-19 14:58:34,756 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-01-19 14:58:35,212 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2015-01-19 14:58:35,215 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2015-01-19 14:58:35,248 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 5
+2015-01-19 14:58:35,287 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:5
+2015-01-19 14:58:35,623 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1046917484_0001
+2015-01-19 14:58:35,685 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera1046917484/.staging/job_local1046917484_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 14:58:35,696 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/staging/cloudera1046917484/.staging/job_local1046917484_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 14:58:35,987 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local1046917484_0001/job_local1046917484_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+2015-01-19 14:58:35,998 WARN org.apache.hadoop.conf.Configuration: file:/tmp/hadoop-cloudera/mapred/local/localRunner/cloudera/job_local1046917484_0001/job_local1046917484_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+2015-01-19 14:58:36,005 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2015-01-19 14:58:36,006 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local1046917484_0001
+2015-01-19 14:58:36,011 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2015-01-19 14:58:36,020 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2015-01-19 14:58:36,087 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2015-01-19 14:58:36,097 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1046917484_0001_m_000000_0
+2015-01-19 14:58:36,178 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 14:58:36,181 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1:0+50
+2015-01-19 14:58:36,281 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 14:58:36,282 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 14:58:36,282 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 14:58:36,282 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 14:58:36,282 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 14:58:36,292 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 14:58:36,315 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@1d69fe0a
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 14:58:36,318 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 14:58:36,327 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1046917484_0001_m_000001_0
+2015-01-19 14:58:36,332 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 14:58:36,340 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq1~:0+13
+2015-01-19 14:58:36,445 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 14:58:36,452 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 14:58:36,452 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 14:58:36,452 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 14:58:36,453 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 14:58:36,459 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 14:58:36,463 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@158a1cdf
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 14:58:36,464 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 14:58:36,473 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1046917484_0001_m_000002_0
+2015-01-19 14:58:36,476 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 14:58:36,478 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq3~:0+0
+2015-01-19 14:58:36,557 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 14:58:36,557 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 14:58:36,557 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 14:58:36,557 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 14:58:36,557 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 14:58:36,558 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 14:58:36,560 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@7b8f3d03
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 14:58:36,560 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 14:58:36,564 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1046917484_0001_m_000003_0
+2015-01-19 14:58:36,566 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 14:58:36,568 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq4~:0+0
+2015-01-19 14:58:36,638 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 14:58:36,639 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 14:58:36,639 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 14:58:36,639 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 14:58:36,639 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 14:58:36,640 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 14:58:36,641 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@626d26e
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 14:58:36,642 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 14:58:36,646 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1046917484_0001_m_000004_0
+2015-01-19 14:58:36,649 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-01-19 14:58:36,650 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/Desktop/localhadoop/readseq/seq2~:0+0
+2015-01-19 14:58:37,508 INFO org.apache.hadoop.mapreduce.Job: Job job_local1046917484_0001 running in uber mode : false
+2015-01-19 14:58:37,516 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-01-19 14:58:37,516 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-01-19 14:58:37,516 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-01-19 14:58:37,516 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-01-19 14:58:37,516 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-01-19 14:58:37,520 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-01-19 14:58:37,522 INFO org.apache.hadoop.mapred.MapTask: Ignoring exception during close for org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader@5572e44d
+java.lang.NullPointerException
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.close(SequenceFileRecordReader.java:105)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.close(MapTask.java:520)
+	at org.apache.hadoop.mapred.MapTask.closeQuietly(MapTask.java:1997)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:793)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 14:58:37,523 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-01-19 14:58:37,524 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2015-01-19 14:58:37,540 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2015-01-19 14:58:37,542 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local1046917484_0001
+java.lang.Exception: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.io.IOException: file:/home/cloudera/Desktop/localhadoop/readseq/seq1 not a SequenceFile
+	at org.apache.hadoop.io.SequenceFile$Reader.init(SequenceFile.java:1850)
+	at org.apache.hadoop.io.SequenceFile$Reader.initialize(SequenceFile.java:1810)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1759)
+	at org.apache.hadoop.io.SequenceFile$Reader.<init>(SequenceFile.java:1773)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader.initialize(SequenceFileRecordReader.java:54)
+	at org.apache.hadoop.mapred.MapTask$NewTrackingRecordReader.initialize(MapTask.java:545)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:783)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2015-01-19 14:58:38,533 INFO org.apache.hadoop.mapreduce.Job: Job job_local1046917484_0001 failed with state FAILED due to: NA
+2015-01-19 14:58:38,544 INFO org.apache.hadoop.mapreduce.Job: Counters: 0

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="conf"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/avro.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-beanutils-core.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-beanutils.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-cli.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-codec.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-collections.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-compress.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-configuration.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-digester.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-httpclient.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-io.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-lang.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-logging.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-math3.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/commons-net.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/guava.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/hadoop-annotations.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/hadoop-auth.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/hadoop-common.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/hadoop-hdfs.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/hadoop-mapreduce-client-app.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/hadoop-mapreduce-client-common.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/hadoop-mapreduce-client-core.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/hadoop-mapreduce-client-jobclient.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/hadoop-mapreduce-client-shuffle.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/hadoop-yarn-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/hadoop-yarn-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/hadoop-yarn-common.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/hadoop-yarn-server-common.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/jackson-core-asl.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/jackson-mapper-asl.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/jetty-util.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/jsr305.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/log4j.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/paranamer.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/protobuf-java.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/slf4j-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/snappy-java.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/xmlenc.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/xz.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hadoop/client/zookeeper.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/cloudera/lib/mrunit-0.9.0-incubating-hadoop2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/cloudera/lib/junit-4.11.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/cloudera/lib/hamcrest-all-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hive/lib/hive-jdbc.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/lib/hive/lib/hive-jdbc-0.13.1-cdh5.3.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
